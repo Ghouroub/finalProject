@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToDo</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+
+</head>
+
+<body >
+
+<div ng-app="todoApp" ng-controller="todoController">
+    <form ng-submit="add()">
+    <input ng-model="title"><button>Add</button>
+    </form>
+    <ul>
+        <li ng-repeat="t in tasks track by $index">{{ t }} <button ng-click="delete()">x</button></li>
+    </ul>
+</div>
+
+  <script src="js/toDoController.js"></script>
+</body>
+</html>

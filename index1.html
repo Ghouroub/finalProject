@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+
+</head>
+
+<body >
+<div id="header">
+    <div class="item" ng-click="click(1, $event)" ng-mouseenter="hoverIn($event)" ng-mouseleave="hoverOut($event)">
+1
+    </div>
+    <div class="item" ng-click="click(2, $event)" ng-mouseenter="hoverIn($event)" ng-mouseleave="hoverOut($event)">
+2
+    </div>
+    <div class="item" ng-click="click(3, $event)" ng-mouseenter="hoverIn($event)" ng-mouseleave="hoverOut($event)">
+3
+    </div>
+</div>
+<div ng-app="ProjectApp">
+    <div ng-controller="projectController">
+        <h1>{{greeting}}</h1>
+    </div>
+</div>
+
+  <script src="js/projectController.js"></script>
+</body>
+</html>
