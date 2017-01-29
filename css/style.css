@@ -1,5 +1,15 @@
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
+ul {
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+ul li {
+	display:inline-block;
+}
+
+ul li img {
+	margin-top: 5px;
+	width:200px;
+	height:200px;
+}
